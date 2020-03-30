@@ -95,7 +95,7 @@
     - 부모를 반드시 필요로 하다면 fragment를 사용하면 됩니다.
     - Fragment 태그 생략이 가능합니다.
     
-    ```
+    ```html
     import React, { Fragment } from 'react';            import React, { Fragment } from 'react';
     
     function App() {                                    function App() {
@@ -112,7 +112,7 @@
   - 리액트에서는 JSX 내부에서  IF문을 사용 할 수 없습니다. 하지만 내용을 랜더링해야 할 때는 JSX 밖에서 IF문을 사용하여 사전에 값을 설정하거나
   {} 안에 조건부 연산자(삼항 연산자)를 사용 하면 됩니다.
 
-  ```
+  ```html
   import React from 'react';
   
   function App() {
@@ -127,4 +127,67 @@
       </div>
     );
   }
+  ```
+
+#### [조건문 true 일때 처리]
+  && 를 사용하면 조건이 true 처리할 수 있습니다.
+
+  ```html
+  import React from 'react';
+  
+  function App() {
+    const name = '뤼왝트';
+    return <div>{name === '리액트' ? <h1>리액트입니다.</h1> : null} </div>
+  }
+  
+  export default App;
+  ```
+  
+  ```html
+  import React from 'react';
+  
+  function App() {
+    const name = '뤼왝트';
+    return <div>{name === '리액트' && <h1>리액트입니다.</h1>} </div>;
+  }
+  
+  export default App;
+  ```
+  
+#### [조건문 null 이거나 undefined 일때 처리]
+|| 를 사용하면 조건이 null이거나 undefined일때 처리할 수 있습니다.
+
+  ```html
+  import React from 'react';
+  import './App.css';
+  
+  function App() {
+    const name = undefined;
+    return <div>{name || 리액트'} </div>;
+  }
+  
+  export default App;
+  ```
+  
+#### [리액트 인라인 스타일 적용]
+리액트 요소 인라인 스타일 적용시 객체 형태로 적용 시켜야 합니다.
+
+  ```html
+  import React from 'react';
+  import './App.css';
+  
+  function App() {
+    const name = '리액트';
+    const style = {
+      // background-color는 backgroundColor와 같이 -가 사라지고 카멜 표기법으로 작성됩니다.
+      backgroundColor: 'black',
+      color: 'aqua',
+      fontSize: '48px',   // font-size -> fontSize
+      fontWeight: 'blod', // font-weight -> fontWeight
+      padding: 16         // 단위를 생략하면 px로 지정됩니다.
+    };
+    return <div style={style}>{name}</div>;
+  }
+  
+  export default App;
   ```
