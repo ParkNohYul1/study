@@ -95,7 +95,7 @@
     - 부모를 반드시 필요로 하다면 fragment를 사용하면 됩니다.
     - Fragment 태그 생략이 가능합니다.
     
-    ```jsx
+    ```
     import React, { Fragment } from 'react';            import React, { Fragment } from 'react';
     
     function App() {                                    function App() {
