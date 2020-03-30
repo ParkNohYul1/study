@@ -75,3 +75,4 @@ Virtual DOM은 가상의 Document Object Model을 말한다.
 변경된 부분만 진짜 DOM의 반영하는 방식으로 작업을 수행한다. 앱의 효율성과 속도가 높아진다.
 ```
 
+#### [JSX]
