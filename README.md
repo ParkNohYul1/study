@@ -91,7 +91,7 @@
     - Fragment 태그 생략이 가능합니다.
     
     ```
-    import React, { Fragment } from 'react';
+    import React, { Fragment } from 'react';            import React, { Fragment } from 'react';
     
     function App() {                                    function App() {
       return (                                            return (
