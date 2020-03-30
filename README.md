@@ -95,7 +95,7 @@
     - 부모를 반드시 필요로 하다면 fragment를 사용하면 됩니다.
     - Fragment 태그 생략이 가능합니다.
     
-    ```html
+    ```jsx
     import React, { Fragment } from 'react';            import React, { Fragment } from 'react';
     
     function App() {                                    function App() {
@@ -112,7 +112,7 @@
   - 리액트에서는 JSX 내부에서  IF문을 사용 할 수 없습니다. 하지만 내용을 랜더링해야 할 때는 JSX 밖에서 IF문을 사용하여 사전에 값을 설정하거나
   {} 안에 조건부 연산자(삼항 연산자)를 사용 하면 됩니다.
 
-  ```html
+  ```jsx
   import React from 'react';
   
   function App() {
@@ -132,7 +132,7 @@
 #### [조건문 true 일때 처리]
   && 를 사용하면 조건이 true 처리할 수 있습니다.
 
-  ```html
+  ```jsx
   import React from 'react';
   
   function App() {
@@ -143,7 +143,7 @@
   export default App;
   ```
   
-  ```html
+  ```jsx
   import React from 'react';
   
   function App() {
@@ -157,7 +157,7 @@
 #### [조건문 null 이거나 undefined 일때 처리]
 || 를 사용하면 조건이 null이거나 undefined일때 처리할 수 있습니다.
 
-  ```html
+  ```jsx
   import React from 'react';
   import './App.css';
   
@@ -172,7 +172,7 @@
 #### [리액트 인라인 스타일 적용]
 리액트 요소 인라인 스타일 적용시 객체 형태로 적용 시켜야 합니다.
 
-  ```html
+  ```jsx
   import React from 'react';
   import './App.css';
   
