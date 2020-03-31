@@ -27,7 +27,7 @@
   0330 // 지도 태그 관련 SQL문 수정  
   0331 // 헤더 메뉴에 달력 관련 기능 추가 (마크업 + 백엔드)
 
-</<details>
+</details>
 
 <details>
   <summary>운동</summary>
