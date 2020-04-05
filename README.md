@@ -185,6 +185,9 @@
 #### [리액트 인라인 스타일 적용]
 리액트 요소 인라인 스타일 적용시 객체 형태로 적용 시켜야 합니다.
 
+- 스타일 이름 중에 - 를 포함 한 것이 있다면 -를 없애고 카멜 표기법으로 작성해야 합니다.
+
+  변수로 작성
   ```jsx
   import React from 'react';
   import './App.css';
@@ -204,5 +207,33 @@
   
   export default App;
   ```
+
+  style 안에 지정해서 작성
+  ```jsx
+  import React from 'react';
+  import './App.css';
   
+  function App() {
+    const name = '리액트';
+    const style = {
+      // background-color는 backgroundColor와 같이 -가 사라지고 카멜 표기법으로 작성됩니다.
+      backgroundColor: 'black',
+      color: 'aqua',
+      fontSize: '48px',   // font-size -> fontSize
+      fontWeight: 'blod', // font-weight -> fontWeight
+      padding: 16         // 단위를 생략하면 px로 지정됩니다.
+    };
+    return <div style={style}>{name}</div>;
+  }
+  
+  export default App;
+  ```
+  ```
+
+  
+  </details>
+
+  <details>
+    <summary>5일차 학습</summary>
+
   </details>
