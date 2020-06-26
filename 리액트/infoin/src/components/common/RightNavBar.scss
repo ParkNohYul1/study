@@ -1,0 +1,59 @@
+/* 큰 데스크탑 디바이스 */
+@media screen and (min-width: 1000px) {
+  // 오른쪽 네비게이터
+  .navMove {
+    position: fixed;
+    width: 20px;
+    height: 182px;
+    top: 449px;
+    right: 7%;
+    color: white;
+    text-align: center;
+    transform: translateY(-50%);
+    transition: all 0.35s linear;
+  }
+
+  .navMove.black {
+    filter: invert(100%);
+  }
+
+  .navMove.colorInvert {
+    filter: invert(100%);
+  }
+
+  .navMoveDiv {
+    div[class*='moveText'] {
+      display: none;
+    }
+
+    .circlePotin {
+      width: 10px;
+      height: 10px;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+  }
+
+  .navMoveDiv.active {
+    div[class*='moveText'] {
+      display: block;
+      margin-top: 15px;
+    }
+    .circlePotin {
+      background-color: white;
+      cursor: auto;
+    }
+    .rectanglePoint {
+      width: 2px;
+      height: 40px;
+      background: white;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+    }
+  }
+}

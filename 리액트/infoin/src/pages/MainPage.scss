@@ -1,0 +1,126 @@
+/* 공통 css */
+
+/* 모바일 디바이스 */
+@media screen and (max-width: 999px) {
+  .mainBlack {
+    width: 100%;
+  }
+
+  .infoinBox__video {
+    display: none;
+  }
+
+  .infoinBox {
+    width: 100%;
+    z-index: 0;
+    color: white;
+    padding: 25px 31px;
+    height: 90vh;
+    background-image: url(/images/mobile_main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .infoinBox__text {
+    width: 100%;
+    word-break: keep-all;
+    margin-bottom: 49px;
+  }
+
+  .infoinBox__text-title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    text-align: left;
+  }
+
+  .infoinBox__text-detail {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.7px;
+    text-align: left;
+    padding-top: 22px;
+  }
+
+  .infoinBox__button {
+    margin-top: 16px;
+    display: block;
+    padding: 1.3em 4.5em;
+    border-radius: 27px;
+    border: 1px solid white;
+    text-align: center;
+  }
+
+  .infoinBox__button-fullScreen {
+    margin-top: 16px;
+    display: block;
+    padding: 1.3em 4.5em;
+    border-radius: 27px;
+    border: 1px solid white;
+    text-align: center;
+  }
+}
+
+/* 큰 데스크탑 디바이스 */
+@media screen and (min-width: 1000px) {
+  .infoinBox__video {
+    position: fixed;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    filter: brightness(73%);
+    min-width: 1000px;
+  }
+
+  .mainBlack {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: black;
+  }
+
+  .infoinBox {
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    transform: translateY(-50%);
+  }
+
+  .infoinBox__text {
+    color: white;
+  }
+
+  .infoinBox__text-title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    text-align: left;
+  }
+
+  .infoinBox__text-detail {
+    width: 341px;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    letter-spacing: -0.7px;
+    text-align: left;
+    padding-top: 22px;
+  }
+
+  .infoinBox__button {
+    margin-top: 16px;
+    display: inline-block;
+    padding: 1.3em 4.5em;
+    border-radius: 27px;
+    border: 1px solid white;
+    color: white;
+  }
+
+  .infoinBox__button-fullScreen {
+    display: none;
+  }
+}

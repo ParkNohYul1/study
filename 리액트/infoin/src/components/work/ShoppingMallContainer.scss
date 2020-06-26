@@ -1,0 +1,98 @@
+/* 큰 데스크탑 디바이스 */
+@media screen and (min-width: 1000px) {
+  .shoppingMall {
+    width: 1200px;
+  }
+
+  .shoppingMall__title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .shoppingMall__content {
+    width: 484px;
+    font-size: 14px;
+    letter-spacing: -0.7px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+
+  .articleContainer {
+    width: 1200px;
+    height: 214px;
+    margin-bottom: 50px;
+  }
+
+  .articleContainer__item {
+    width: 214px;
+    height: 214px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(69, 91, 99, 0.2);
+    background-color: #ffffff;
+    margin-right: 32px;
+    float: left;
+  }
+
+  .articleContainer__last {
+    width: 214px;
+    height: 214px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(69, 91, 99, 0.2);
+    background-color: #ffffff;
+    float: left;
+  }
+
+  .articleContainer__item-icon {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 20px;
+  }
+
+  .articleContainer__item-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: -0.8px;
+    text-align: center;
+  }
+
+  .articleContainer__item-content {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  .articleContainer__item:hover,
+  .articleContainer__last:hover {
+    background-color: black;
+    transition: background-color 0.6s;
+
+    .articleContainer__item-icon {
+      display: none;
+    }
+    .articleContainer__item-title {
+      padding-top: 66px;
+      color: white;
+    }
+    .articleContainer__item-content {
+      display: block;
+      padding-top: 15px;
+      padding-left: 14px;
+      padding-right: 14px;
+      text-align: center;
+      font-size: 14px;
+      color: white;
+      position: static !important;
+      width: auto;
+      height: auto;
+      overflow: hidden;
+      clip: auto;
+      clip: auto;
+    }
+  }
+}

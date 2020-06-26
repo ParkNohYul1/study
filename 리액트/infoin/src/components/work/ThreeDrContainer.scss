@@ -1,0 +1,260 @@
+/* 큰 데스크탑 디바이스 */
+@media screen and (min-width: 1000px) {
+  .threeDrSlider {
+    width: 100%;
+    height: 900px;
+  }
+  .threeDrSliderBox1 {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-image: url(/images/4133.png);
+    background-repeat: no-repeat;
+  }
+  .threeDrSliderBox2 {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-image: url(/images/4133.png);
+    background-repeat: no-repeat;
+  }
+  .threeDrSliderBox3 {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-image: url(/images/4133.png);
+    background-repeat: no-repeat;
+  }
+
+  .bgImages {
+    position: absolute;
+    width: auto;
+    height: 900px;
+  }
+
+  .threeDrSliderBox1__contents {
+    position: absolute;
+    top: 200px;
+    left: 363px;
+  }
+
+  .threeDrSliderBox1__contents-contnet {
+    width: 458px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.7px;
+    text-align: left;
+    color: #ffffff;
+    padding-top: 20px;
+  }
+
+  .threeDrSliderBox1__contents-Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 204px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    margin-top: 30px;
+    transition: background-color 0.5s;
+  }
+
+  .threeDrSliderBox1__contents-Link:hover {
+    background-color: #f5858540;
+  }
+
+  .threeDrMain {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1124px;
+  }
+
+  .threeDrContainer {
+    width: 1200px;
+    height: 100%;
+  }
+
+  .threeDrFunctionList {
+    position: relative;
+    width: 100%;
+    height: 204px;
+    padding: 0px 144px;
+    margin: 100px 0px;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .threeDrFunctionList__item {
+    position: relative;
+    width: 204px;
+    height: 204px;
+    border: solid 1px black;
+    border-radius: 102px;
+    background-color: white;
+    z-index: 1;
+    text-align: center;
+    padding-top: 58px;
+    margin-right: 29px;
+    display: inline-block;
+  }
+
+  .threeDrFunctionList__item.last {
+    margin: 0;
+  }
+
+  .threeDrFunctionList__centerBorder {
+    width: 906px;
+    height: 1px;
+    background-color: #333333;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+  }
+
+  .threeDrFunctionList__item-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -0.8px;
+  }
+
+  .threeDrFunctionList__item-content {
+    padding-top: 20px;
+    font-family: NotoSansCJKkr;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.7px;
+  }
+
+  .threeDrSkill {
+    width: 100%;
+    height: 112px;
+    margin-bottom: 100px;
+  }
+
+  .threeDrSkill__bar {
+    width: 30px;
+    height: 1px;
+    border-bottom: 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .threeDrSkill__text {
+    width: 440px;
+    height: 92px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.7px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .DronAiData {
+    width: 100%;
+    height: 356px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .DronAiData__dronImage {
+    position: relative;
+    display: inline-block;
+    width: 582px;
+    height: 100%;
+    background-image: url(/images/dron_MAIN.png);
+    background-repeat: no-repeat;
+  }
+
+  .DronAiData__aiImage {
+    position: relative;
+    display: inline-block;
+    width: 582px;
+    height: 100%;
+    background-image: url(/images/ai_MAIN.png);
+    background-repeat: no-repeat;
+  }
+
+  .DronAiData__mainText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 29px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+  }
+
+  .DronAiData__background {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.3;
+  }
+
+  .DronAiData__info {
+    position: absolute;
+    width: 394px;
+    height: 68px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.7px;
+    text-align: center;
+    color: #ffffff;
+    top: 107px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+
+    a {
+      display: block;
+      margin-top: 60px;
+      width: 276px;
+      height: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid;
+      padding: 17px;
+      border-radius: 30px;
+      opacity: 0;
+    }
+  }
+
+  .DronAiData__dronImage:hover,
+  .DronAiData__aiImage:hover {
+    .DronAiData__mainText {
+      top: 60px;
+    }
+
+    .DronAiData__background {
+      opacity: 0.5;
+      transition: opacity 0.2s;
+    }
+
+    .DronAiData__info {
+      opacity: 1;
+      transition: opacity 0.5s linear;
+      a {
+        opacity: 1;
+        transition: opacity 0.5s linear;
+      }
+    }
+  }
+
+  .threeDrSkill__text .slick-dots li.slick-active button:before {
+    color: white;
+  }
+
+  .slick-dots {
+    bottom: 50px;
+  }
+}

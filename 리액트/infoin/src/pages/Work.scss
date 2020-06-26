@@ -1,0 +1,177 @@
+/* 모바일 디바이스 */
+@media screen and (max-width: 999px) {
+}
+
+/* 큰 데스크탑 디바이스 */
+@media screen and (min-width: 1000px) {
+  .systemIntegration {
+    position: relative;
+    width: 100%;
+    height: 2027px;
+    background-image: url('/images/4211.png');
+    background-repeat: no-repeat;
+  }
+
+  .siInfo {
+    position: absolute;
+    top: 200px;
+    left: 19%;
+    color: white;
+  }
+
+  .siInfo__fullName {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 26px;
+  }
+
+  .siInfo__info {
+    width: 367px;
+    height: 68px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.7px;
+    text-align: left;
+  }
+
+  .siProcess {
+    position: absolute;
+    top: 543px;
+    left: 50.7%;
+    width: 582px;
+    height: 437px;
+  }
+
+  .siProcess__heading {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: -0.9px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .siProcess__part {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    margin-bottom: 50px;
+  }
+
+  .siProcess__barLeft {
+    position: absolute;
+    border-bottom: 1px solid white;
+    width: 51px;
+    height: 1px;
+    left: 160px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .siProcess__barRight {
+    position: absolute;
+    border-bottom: 1px solid white;
+    width: 51px;
+    height: 1px;
+    left: 370px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .siProcess__part-circle,
+  .siProcess__part-circleCenter {
+    width: 160px;
+    height: 160px;
+    border: 1px solid white;
+    border-radius: 80px;
+    display: inline-table;
+    text-align: center;
+    color: white;
+    .number {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 0.88;
+      letter-spacing: -1.2px;
+      margin-top: 25px;
+    }
+
+    .content {
+      font-size: 16px;
+      line-height: 0.94;
+      letter-spacing: -0.8px;
+      margin-top: 25px;
+    }
+    .en {
+      font-size: 10px;
+      line-height: 1.5;
+      margin-top: 10px;
+      width: 108px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .siProcess__part-circleCenter {
+    margin: 0px 50px;
+  }
+
+  .siService {
+    position: absolute;
+    top: 1280px;
+    left: 50%;
+    width: 990px;
+    height: 547px;
+    color: white;
+    transform: translateX(-50%);
+  }
+
+  .siServiceTitle {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 100px;
+  }
+
+  .rectangleGroup {
+    width: 990px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rectangleItem {
+    position: relative;
+    width: 310px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .rectangleItem__number {
+    font-size: 130px;
+    transform: translateX(-27px) translateY(-69px);
+    font-weight: bold;
+  }
+
+  .rectangleItem__text {
+    position: absolute;
+    top: 106px;
+    left: 69px;
+    font-size: 16px;
+    line-height: 2.25;
+    letter-spacing: -0.8px;
+    text-align: left;
+  }
+
+  .footerTitle {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.7px;
+    text-align: center;
+    margin-top: 50px;
+  }
+}

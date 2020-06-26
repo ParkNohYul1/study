@@ -1,0 +1,348 @@
+/* 모바일 디바이스 */
+@media screen and (max-width: 999px) {
+  .aboutUsContainer article {
+    height: 100vh;
+  }
+
+  .aboutUsContainer__Article1-image {
+    display: none;
+  }
+}
+
+/* 큰 데스크탑 디바이스 */
+@media screen and (min-width: 1000px) {
+  .aboutUsContainer article {
+    position: relative;
+  }
+
+  .aboutUsContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .aboutUsContainer__article:not(.aboutUsContainer__Article4) {
+    width: 100%;
+    height: 1080px;
+  }
+
+  .aboutUsContainer__Article4 {
+    width: 100%;
+    height: 865px;
+  }
+
+  // 첫번째 article
+  .aboutUsContainer__Article1-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutInfoBox {
+    position: absolute;
+    top: 300px;
+    left: 19%;
+    color: #ffffff;
+  }
+
+  .aboutInfoBox__title {
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .aboutInfoBox__text {
+    padding-top: 20px;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    letter-spacing: -0.7px;
+  }
+
+  // 다운로드 박스
+  .documentBox {
+    position: absolute;
+    bottom: 100px;
+    left: 19%;
+    width: 1163px;
+    height: 65px;
+    color: #ffffff;
+  }
+
+  // Business 버튼 클릭 안했을 때 ************
+  .documentBox__Group {
+    // 버튼 DIV
+    .documentBox__buttonDiv {
+      display: inline-block;
+      width: 50px;
+    }
+
+    // 다운로드 div 그룹
+    .documentBox__Group-div {
+      display: inline-block;
+      width: 1060px;
+      position: relative;
+    }
+
+    // 다운로드 버튼
+    .documentBox__Group-a {
+      width: 159px;
+      display: inline-block;
+      font-size: 16px;
+      text-align: center;
+      border: 1px solid #ffffff;
+      border-radius: 50px;
+      padding: 17px 0px;
+      top: -18px;
+    }
+
+    .docButton1.focusEvent {
+      box-shadow: 0 0 0 0 rgba(#ffffff, 0.5);
+      animation: pulse 1.5s infinite;
+      cursor: pointer;
+    }
+
+    .docButton1 {
+      position: absolute;
+      left: 0px;
+      z-index: 10;
+    }
+
+    a[class*='docButton']:not(.docButton1) {
+      position: absolute;
+      left: 0px;
+      opacity: 0;
+    }
+
+    a[class*='docButton'] {
+      transition: opacity 1s ease-in, transform 3s ease-in;
+    }
+  }
+
+  // Business 버튼 클릭 후 펼쳐졌을 때 ************
+  .documentBox__Group.on {
+    // 강조 버튼 이벤트 삭제
+    .docButton1 {
+      background-color: #ffffff6b;
+      -webkit-animation: none;
+    }
+
+    a[class*='docButton']:not(.docButton1):hover {
+      background-color: #ffffff6b;
+    }
+
+    .docButton2 {
+      animation: docButtonShow 0.5s forwards, docButton2Right 0.5s forwards;
+    }
+    .docButton3 {
+      animation: docButtonShow 0.5s forwards, docButton3Right 0.5s forwards;
+    }
+    .docButton4 {
+      animation: docButtonShow 0.5s forwards, docButton4Right 0.5s forwards;
+    }
+    .docButton5 {
+      animation: docButtonShow 0.5s forwards, docButton5Right 0.5s forwards;
+    }
+    .docButton6 {
+      animation: docButtonShow 0.5s forwards, docButton6Right 0.5s forwards;
+    }
+    .docButton7 {
+      top: 54px;
+      animation: docButtonShow 0.5s forwards, docButton2Right 0.5s forwards;
+    }
+  }
+
+  // 두번째 ariticle
+  .aboutUsContainer__Article2-title {
+    position: absolute;
+    top: 200px;
+    left: 19%;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0.9;
+    letter-spacing: -1.5px;
+    text-align: left;
+  }
+
+  .greetingsDiv {
+    position: absolute;
+    left: 24.5%;
+    top: 345px;
+    width: 480px;
+    height: 465px;
+  }
+
+  .greetingsDiv__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.56;
+    text-align: left;
+  }
+
+  .greetingsDiv__Content {
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: -0.7px;
+    text-align: left;
+  }
+
+  .greetingsDiv__name {
+    font-size: 16px;
+    line-height: 1.69;
+    text-align: right;
+  }
+
+  .greetingsDiv__name-position {
+    padding-right: 15px;
+  }
+
+  .greetingsDiv__name-image {
+    width: 103px;
+    height: 22px;
+  }
+
+  .historyDiv {
+    position: absolute;
+    top: 372px;
+    left: 61%;
+  }
+
+  .historyDiv__group {
+    margin-bottom: 24px;
+    position: relative;
+  }
+
+  .historyDiv__group-year {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .historyDiv__content {
+    font-size: 14px;
+    letter-spacing: -0.7px;
+    display: inline-block;
+    padding-left: 45px;
+  }
+
+  .historyDiv__content-date {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.75;
+    text-align: left;
+    padding-right: 6px;
+  }
+
+  .historyDiv__group-blackCircle {
+    position: absolute;
+    top: 10px;
+    left: 62px;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 10px;
+  }
+
+  .circleCrossbar {
+    position: absolute;
+    left: 66px;
+    top: 10px;
+    height: 403px;
+    border: 1px solid #dddddd;
+    width: 2px;
+  }
+
+  .aboutUsContainer__Article3 {
+    background-color: #fafafa;
+  }
+
+  .partnership {
+    position: absolute;
+    top: 200px;
+    left: 19%;
+    dt {
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 0.9;
+      text-align: left;
+      color: #323232;
+    }
+    dd {
+      padding-top: 20px;
+      width: 468px;
+      height: 44px;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: -0.7px;
+      text-align: left;
+      color: #333333;
+    }
+  }
+
+  .partnershipGroup {
+    position: absolute;
+    top: 359px;
+    left: 19%;
+    width: 1194px;
+    height: 295px;
+  }
+
+  .partnershipDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 31px;
+  }
+
+  .partnershipDiv__imageGroup {
+    width: 378px;
+    height: 295px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .infoinMap {
+    position: absolute;
+    top: 200px;
+    left: 19%;
+    width: 296px;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.7px;
+    color: #333333;
+  }
+
+  .infoinMap__kakaoMap {
+    width: 714px;
+    height: 500px;
+  }
+
+  .infoinMap__info {
+    position: absolute;
+    top: 224px;
+    left: 786px;
+    width: 367px;
+    height: 226px;
+    div {
+      margin-bottom: 30px;
+      height: 40px;
+    }
+  }
+
+  .infoinMap__info-text {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .infoinMap__info-icon {
+    float: left;
+    padding-right: 14px;
+  }
+
+  .info-pt {
+    display: inline-block;
+    padding-top: 7px;
+  }
+}

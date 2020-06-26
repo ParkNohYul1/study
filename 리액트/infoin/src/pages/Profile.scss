@@ -1,0 +1,390 @@
+// profile 공통 css
+.profileContainer__Article1 {
+  background: #ffdd00;
+}
+
+.tntnText {
+  font-family: NotoSansCJKkr;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  z-index: 1;
+}
+
+.profileContainer__Article2-info {
+  position: absolute;
+
+  dt {
+    object-fit: contain;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  dd {
+    object-fit: contain;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: -0.7px;
+    text-align: left;
+  }
+}
+
+/* 모바일 디바이스 */
+@media screen and (max-width: 999px) {
+  .profileContainer article {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  // 첫번째 article
+  .tntnText {
+    font-size: 35px;
+    padding: 85px 59px 0;
+  }
+
+  .tntnImage__imgGroup-background {
+    width: 100%;
+    height: 973px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .tntnImage__imgGroup-character {
+    display: none;
+  }
+
+  .tntnImage__imgGroup-phone {
+    display: none;
+  }
+
+  .tntnImage__imgGroup-phoneContent {
+    display: none;
+  }
+
+  .tntnImage__imgGroup-desktop {
+    display: none;
+  }
+  .tntnImage__imgGroup-desktopContent {
+    display: none;
+  }
+
+  // 두번째 article
+  .profileContainer__Article2-tnImage {
+    display: none;
+  }
+
+  // 세번째 article
+  img[class*='planImage'] {
+    display: none;
+  }
+
+  .profileContainer__Article4-img {
+    display: none;
+  }
+}
+
+// 작은 데스크톱 디바이스
+@media screen and (max-width: 1600px) and (min-width: 1000px) {
+  .profileContainer__Article2-tnImage {
+    width: 836px;
+    height: 631px;
+    position: absolute;
+    top: 134px;
+    left: 74px;
+  }
+
+  .profileContainer__Article2-info {
+    background: #ffffff;
+    opacity: 0.9;
+    padding: 17px;
+    width: 461px;
+    height: 150px;
+    top: 374px;
+    left: 956px;
+    dt {
+      width: 93px;
+      height: 17px;
+    }
+    dd {
+      width: 461px;
+      height: 111px;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1000px) {
+  .profileContainer__Article3-planHeading,
+  .profileContainer__Article3-planText,
+  .profileContainer__Article3-block,
+  .profileContainer__Article4-devHeading,
+  .profileContainer__Article4-block,
+  .profileContainer__Article4-devText {
+    left: 157px;
+  }
+}
+
+/* 큰 데스크탑 디바이스 */
+@media screen and (min-width: 1000px) {
+  .profileContainer article {
+    position: relative;
+  }
+
+  // profile 컨테이너
+  .profileContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  //공통 article 크기 설정
+  .profileContainer__article {
+    width: 100%;
+    height: 1080px;
+  }
+
+  // 첫번째 article **
+  .profileContainer__Article1 {
+    position: relative;
+  }
+
+  .tntnText {
+    width: 1194px;
+    font-size: 64px;
+    padding-top: 224px;
+    margin: auto;
+  }
+
+  // 첫번째 이미지 그룹 배경
+  .tntnImage__imgGroup-background {
+    position: absolute;
+    width: 1322px;
+    height: 973px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .tntnImage__imgGroup-character {
+    position: absolute;
+    top: 242px;
+    right: 408px;
+    width: 302px;
+    height: 173px;
+    z-index: 2;
+  }
+
+  .tntnImage__imgGroup-phone {
+    position: absolute;
+    width: 235px;
+    height: 469px;
+    z-index: 2;
+    position: absolute;
+    top: 478px;
+    right: 847px;
+  }
+
+  .tntnImage__imgGroup-phoneContent {
+    width: 205px;
+    height: 444px;
+    z-index: 3;
+    position: absolute;
+    border-radius: 26px;
+    top: 490px;
+    right: 862px;
+  }
+
+  .tntnImage__imgGroup-desktop {
+    width: 1012px;
+    height: 547px;
+    z-index: 1;
+    position: absolute;
+    top: 379px;
+    right: 0px;
+  }
+
+  .tntnImage__imgGroup-desktopContent {
+    width: 764px;
+    height: 455px;
+    z-index: 1;
+    position: absolute;
+    top: 418px;
+    right: 125px;
+  }
+
+  // 두번째 article **
+
+  // 세번째 article **
+  .profileContainer__Article3 {
+    overflow: hidden;
+  }
+
+  .profileContainer__Article3-planHeading {
+    position: absolute;
+    left: 366px;
+    top: 229px;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1.31;
+    text-align: left;
+    z-index: 2;
+  }
+
+  .profileContainer__Article3-planText {
+    position: absolute;
+    left: 366px;
+    top: 420px;
+    width: 404px;
+    height: 64px;
+    z-index: 1;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.7px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .profileContainer__Article3-block {
+    position: absolute;
+    left: 366px;
+    top: 360px;
+    width: 460px;
+    height: 46px;
+    background-color: #b2d235;
+    z-index: 1;
+  }
+
+  img[class*='planImage'] {
+    opacity: 0.35;
+    filter: alpha(opacity=35);
+    z-index: 0;
+  }
+
+  .profileContainer__Article3-planImage1 {
+    width: 238px;
+    height: 552px;
+    position: absolute;
+    top: 308px;
+  }
+
+  .profileContainer__Article3-planImage2 {
+    left: 288px;
+    width: 365px;
+    height: 552px;
+    position: absolute;
+    top: 308px;
+  }
+
+  .profileContainer__Article3-planImage3 {
+    left: 698px;
+    width: 365px;
+    height: 552px;
+    position: absolute;
+    top: 308px;
+  }
+
+  .profileContainer__Article3-planImage4 {
+    left: 1110px;
+    width: 365px;
+    height: 552px;
+    position: absolute;
+    top: 308px;
+  }
+
+  .profileContainer__Article3-planImage5 {
+    left: 1535px;
+    width: 365px;
+    height: 552px;
+    position: absolute;
+    top: 308px;
+  }
+
+  // 네번째 article **
+  .profileContainer__Article4 {
+    background: #222222;
+  }
+
+  .profileContainer__Article4-devHeading {
+    position: absolute;
+    left: 367px;
+    top: 162px;
+    width: 356px;
+    height: 137px;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1.31;
+    text-align: left;
+    color: #ffffff;
+    z-index: 2;
+  }
+
+  .profileContainer__Article4-block {
+    position: absolute;
+    top: 287px;
+    left: 366px;
+    width: 270px;
+    height: 45px;
+    background-color: #ffdd00;
+    z-index: 1;
+  }
+
+  .profileContainer__Article4-devText {
+    position: absolute;
+    top: 351px;
+    left: 367px;
+    width: 330px;
+    height: 62px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.7px;
+    text-align: left;
+    color: #ffffff;
+    z-index: 1;
+  }
+
+  .profileContainer__Article4-img {
+    position: absolute;
+    top: 289px;
+    right: 0px;
+    width: 1212px;
+    height: 791px;
+    opacity: 0.9;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .profileContainer__Article2-tnImage {
+    width: 836px;
+    height: 631px;
+    position: absolute;
+    top: 134px;
+    left: 196px;
+  }
+
+  .profileContainer__Article2-info {
+    background: #ffffff;
+    opacity: 0.9;
+    padding: 17px;
+    width: 461px;
+    height: 150px;
+    top: 374px;
+    left: 1078px;
+    dt {
+      width: 93px;
+      height: 17px;
+    }
+    dd {
+      width: 461px;
+      height: 111px;
+    }
+  }
+}

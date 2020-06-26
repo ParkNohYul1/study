@@ -1,0 +1,58 @@
+/* 모바일 디바이스 */
+@media screen and (max-width: 999px) {
+}
+
+/* 큰 데스크탑 디바이스 */
+@media screen and (min-width: 1000px) {
+  .navDataDiv {
+    position: relative;
+    width: 100%;
+  }
+
+  .navList {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    height: 60px;
+  }
+
+  .navList__navBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 174px;
+    height: 60px;
+    color: black;
+    background: white;
+    border: 1px solid #dddddd;
+    border-radius: 40px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .navList__navBlock:hover:not(.active) {
+    background: #f2f2f2;
+    transition: background-color 0.5s;
+  }
+
+  .navList__navBlock.active {
+    color: white;
+    background: black;
+    cursor: auto;
+  }
+
+  .navListBox {
+    width: 100%;
+    height: 357px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* 작은 데스크탑 디바이스 */
+@media screen and (max-width: 1600px) and (min-width: 1000px) {
+  .navList {
+    left: 256px;
+  }
+}
